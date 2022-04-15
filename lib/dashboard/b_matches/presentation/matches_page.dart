@@ -77,13 +77,15 @@ class MatchesPage extends HookConsumerWidget {
             children: [
               SizedBox(
                 height: _height,
-                child:
-                    TabBarView(controller: tabBarController, children: const [
-                  MemberCard(),
-                  OnlineCard(),
-                  NewTab(),
-                  Nearbytab(),
-                ]),
+                child: TabBarView(
+                  controller: tabBarController,
+                  children: const [
+                    MemberCard(),
+                    OnlineCard(),
+                    NewTab(),
+                    Nearbytab(),
+                  ],
+                ),
               )
             ],
           ),
