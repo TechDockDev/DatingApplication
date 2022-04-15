@@ -60,17 +60,17 @@ class EmailConfirmPage extends StatelessWidget {
                   children: [
                     Text(
                       'Enter your email and you will immediately receive',
-                      style: TextStyle(
-                        color: Colors.grey,
-                        fontSize: 18.sp,
-                      ),
+                      style: Theme.of(context).textTheme.headline5!.copyWith(
+                            fontSize: 18.sp,
+                            color: Colors.grey,
+                          ),
                     ),
                     Text(
                       "your login information from us.",
-                      style: TextStyle(
-                        color: Colors.grey,
-                        fontSize: 18.sp,
-                      ),
+                      style: Theme.of(context).textTheme.headline5!.copyWith(
+                            fontSize: 18.sp,
+                            color: Colors.grey,
+                          ),
                     )
                   ],
                 ),

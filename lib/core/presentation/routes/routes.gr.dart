@@ -54,19 +54,19 @@ class AppRouter extends _i7.RootStackRouter {
 
   @override
   List<_i7.RouteConfig> get routes => [
-        _i7.RouteConfig(SignUpRoute.name, path: '/'),
+        _i7.RouteConfig(SignUpRoute.name, path: '/sign-up-page'),
         _i7.RouteConfig(LogInRoute.name, path: '/log-in-page'),
         _i7.RouteConfig(EmailConfirmRoute.name, path: '/email-confirm-page'),
         _i7.RouteConfig(VerifyCodeRoute.name, path: '/verify-code-page'),
         _i7.RouteConfig(WelcomeRoute.name, path: '/welcome-page'),
-        _i7.RouteConfig(DashBoardRoute.name, path: '/dash-board-page')
+        _i7.RouteConfig(DashBoardRoute.name, path: '/')
       ];
 }
 
 /// generated route for
 /// [_i1.SignUpPage]
 class SignUpRoute extends _i7.PageRouteInfo<void> {
-  const SignUpRoute() : super(SignUpRoute.name, path: '/');
+  const SignUpRoute() : super(SignUpRoute.name, path: '/sign-up-page');
 
   static const String name = 'SignUpRoute';
 }
@@ -108,7 +108,7 @@ class WelcomeRoute extends _i7.PageRouteInfo<void> {
 /// generated route for
 /// [_i6.DashBoardPage]
 class DashBoardRoute extends _i7.PageRouteInfo<void> {
-  const DashBoardRoute() : super(DashBoardRoute.name, path: '/dash-board-page');
+  const DashBoardRoute() : super(DashBoardRoute.name, path: '/');
 
   static const String name = 'DashBoardRoute';
 }
