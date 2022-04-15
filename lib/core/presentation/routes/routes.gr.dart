@@ -17,7 +17,7 @@ import '../../../authentication/presentation/logIn/email_confirm.dart' as _i3;
 import '../../../authentication/presentation/logIn/log_in_page.dart' as _i2;
 import '../../../authentication/presentation/logIn/verify_page.dart' as _i4;
 import '../../../authentication/presentation/logIn/welcome_page.dart' as _i5;
-import '../../../authentication/presentation/signIn/sign_up_page.dart' as _i1;
+import '../../../authentication/presentation/signUp/sign_up_page.dart' as _i1;
 import '../../../dashboard/presentation/dashboard_page.dart' as _i6;
 
 class AppRouter extends _i7.RootStackRouter {
