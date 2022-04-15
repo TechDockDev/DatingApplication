@@ -72,21 +72,15 @@ class MatchesPage extends HookConsumerWidget {
             ],
           ),
         ),
-        body: SingleChildScrollView(
-          child: Column(
-            children: [
-              SizedBox(
-                height: _height,
-                child: TabBarView(
-                  controller: tabBarController,
-                  children: const [
-                    MemberCard(),
-                    OnlineCard(),
-                    NewTab(),
-                    Nearbytab(),
-                  ],
-                ),
-              )
+        body: SizedBox(
+          height: _height,
+          child: TabBarView(
+            controller: tabBarController,
+            children: const [
+              MemberCard(),
+              OnlineCard(),
+              NewTab(),
+              Nearbytab(),
             ],
           ),
         ),
