@@ -1,3 +1,7 @@
+import 'package:dating_application_screens/dashboard/a_discover/presentation/StoriesPreview.dart';
+import 'package:dating_application_screens/dashboard/a_discover/widget/swipecontainer1.dart';
+import 'package:dating_application_screens/dashboard/a_discover/widget/swipecontainer2.dart';
+import 'package:dating_application_screens/dashboard/a_discover/widget/swipecontainer3.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -113,6 +117,30 @@ class DiscoverPage extends HookConsumerWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const StoryPreview()),
+                    );
+                  },
+                  child: Container(
+                    padding: EdgeInsets.zero,
+                    height: 65.h,
+                    width: 60.w,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 196, 196, 196),
+                      image: const DecorationImage(
+                          image: NetworkImage(
+                            'https://i.pinimg.com/564x/6f/de/85/6fde85b86c86526af5e99ce85f57432e.jpg',
+                          ),
+                          fit: BoxFit.cover),
+                      borderRadius: BorderRadius.circular(10.r),
+                    ),
+                  ),
+                ),
                 Container(
                   padding: EdgeInsets.zero,
                   height: 65.h,
@@ -121,10 +149,10 @@ class DiscoverPage extends HookConsumerWidget {
                   decoration: BoxDecoration(
                     color: const Color.fromARGB(255, 196, 196, 196),
                     image: const DecorationImage(
-                      image: NetworkImage(
-                        'https://cdn-icons-png.flaticon.com/512/21/21104.png',
-                      ),
-                    ),
+                        image: NetworkImage(
+                          'https://i.ytimg.com/vi/qBB_QOZNEdc/maxresdefault.jpg',
+                        ),
+                        fit: BoxFit.cover),
                     borderRadius: BorderRadius.circular(10.r),
                   ),
                 ),
@@ -136,10 +164,10 @@ class DiscoverPage extends HookConsumerWidget {
                   decoration: BoxDecoration(
                     color: const Color.fromARGB(255, 196, 196, 196),
                     image: const DecorationImage(
-                      image: NetworkImage(
-                        'https://cdn-icons-png.flaticon.com/512/21/21104.png',
-                      ),
-                    ),
+                        image: NetworkImage(
+                          'https://images6.fanpop.com/image/photos/41700000/sati-kazanova-1-prettygirls-41785054-300-389.jpg',
+                        ),
+                        fit: BoxFit.cover),
                     borderRadius: BorderRadius.circular(10.r),
                   ),
                 ),
@@ -151,10 +179,10 @@ class DiscoverPage extends HookConsumerWidget {
                   decoration: BoxDecoration(
                     color: const Color.fromARGB(255, 196, 196, 196),
                     image: const DecorationImage(
-                      image: NetworkImage(
-                        'https://cdn-icons-png.flaticon.com/512/21/21104.png',
-                      ),
-                    ),
+                        image: NetworkImage(
+                          'https://images6.fanpop.com/image/photos/41700000/It-s-a-girl-prettygirls-41785092-300-400.jpg',
+                        ),
+                        fit: BoxFit.cover),
                     borderRadius: BorderRadius.circular(10.r),
                   ),
                 ),
@@ -166,25 +194,10 @@ class DiscoverPage extends HookConsumerWidget {
                   decoration: BoxDecoration(
                     color: const Color.fromARGB(255, 196, 196, 196),
                     image: const DecorationImage(
-                      image: NetworkImage(
-                        'https://cdn-icons-png.flaticon.com/512/21/21104.png',
-                      ),
-                    ),
-                    borderRadius: BorderRadius.circular(10.r),
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.zero,
-                  height: 65.h,
-                  width: 60.w,
-                  alignment: Alignment.center,
-                  decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 196, 196, 196),
-                    image: const DecorationImage(
-                      image: NetworkImage(
-                        'https://cdn-icons-png.flaticon.com/512/21/21104.png',
-                      ),
-                    ),
+                        image: NetworkImage(
+                          'https://images6.fanpop.com/image/photos/41700000/It-s-a-girl-prettygirls-41785081-300-421.jpg',
+                        ),
+                        fit: BoxFit.cover),
                     borderRadius: BorderRadius.circular(10.r),
                   ),
                 ),
@@ -202,53 +215,16 @@ class DiscoverPage extends HookConsumerWidget {
                 SwipeableCardsSection(
                   cardController: _cardController,
                   context: context,
-                  items: [
-                    Container(
-                      // height: height,
-                      decoration: const BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage(
-                            "assets/images/discoverDashboardImages/girl_image1.png",
-                          ),
-                          fit: BoxFit.contain,
-                        ),
-                      ),
-                    ),
-                    Container(
-                      decoration: const BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage(
-                            "assets/images/discoverDashboardImages/girl_image2.png",
-                          ),
-                          fit: BoxFit.contain,
-                        ),
-                      ),
-                    ),
-                    Container(
-                      decoration: const BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage(
-                            "assets/images/discoverDashboardImages/girl_image3.png",
-                          ),
-                          fit: BoxFit.contain,
-                        ),
-                      ),
-                    ),
+                  items: const [
+                    SwipeContainer1(),
+                    SwipeContainer2(),
+                    SwipeContainer3(),
                   ],
                   onCardSwiped: (dir, index, widget) {
                     //Add the next card
                     if (counter <= 20) {
                       _cardController.addItem(
-                        Container(
-                          decoration: const BoxDecoration(
-                            image: DecorationImage(
-                              image: AssetImage(
-                                "assets/images/discoverDashboardImages/girl_image1.png",
-                              ),
-                              fit: BoxFit.contain,
-                            ),
-                          ),
-                        ),
+                        const SwipeContainer2(),
                       );
                       counter++;
                     }
