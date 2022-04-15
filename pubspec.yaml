@@ -39,6 +39,7 @@ dependencies:
   hooks_riverpod: ^1.0.3
   auto_route: ^3.2.4
   swipeable_card_stack: ^0.0.5
+  hexcolor: ^1.0.4
 
 dev_dependencies:
   flutter_test:
@@ -68,6 +69,7 @@ flutter:
   assets:
     - assets/images/discoverDashboardImages/
     - assets/images/signUpImages/
+    - assets/images/profileimages/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
