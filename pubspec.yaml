@@ -40,6 +40,7 @@ dependencies:
   auto_route: ^3.2.4
   swipeable_card_stack: ^0.0.5
   hexcolor: ^1.0.4
+  google_fonts: ^2.3.1
 
 dev_dependencies:
   flutter_test:
@@ -53,6 +54,7 @@ dev_dependencies:
   flutter_lints: ^1.0.0
   build_runner: ^2.1.8
   auto_route_generator: ^3.2.3
+  material_design_icons_flutter: ^5.0.6595
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -70,6 +72,7 @@ flutter:
     - assets/images/discoverDashboardImages/
     - assets/images/signUpImages/
     - assets/images/profileimages/
+    - assets/images/matches/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
