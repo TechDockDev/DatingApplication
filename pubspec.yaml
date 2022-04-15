@@ -39,6 +39,7 @@ dependencies:
   hooks_riverpod: ^1.0.3
   auto_route: ^3.2.4
   swipeable_card_stack: ^0.0.5
+  google_fonts: ^2.3.1
 
 dev_dependencies:
   flutter_test:
