@@ -7,6 +7,7 @@ class ProfilePage extends HookConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     // final height = MediaQuery.of(context).size.height;
+
     return Scaffold(
         appBar: AppBar(
           title: Text(
