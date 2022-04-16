@@ -140,7 +140,7 @@ class ChatsPage extends HookConsumerWidget {
                 children: [
                   Image.asset('assets/images/profileimages/hear.png'),
                   const Spacer(),
-                  const TextField()
+                  // const TextField()
                 ],
               ),
             )
