@@ -54,21 +54,21 @@ class EmailConfirmPage extends StatelessWidget {
                 horizontal: 30.w,
               ),
               child: SizedBox(
-                height: 60.h,
+                height: 100.h,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       'Enter your email and you will immediately receive',
                       style: Theme.of(context).textTheme.headline5!.copyWith(
-                            fontSize: 18.sp,
+                            fontSize: 16.sp,
                             color: Colors.grey,
                           ),
                     ),
                     Text(
                       "your login information from us.",
                       style: Theme.of(context).textTheme.headline5!.copyWith(
-                            fontSize: 18.sp,
+                            fontSize: 16.sp,
                             color: Colors.grey,
                           ),
                     )
