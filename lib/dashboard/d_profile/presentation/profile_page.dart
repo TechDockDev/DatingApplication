@@ -1,3 +1,4 @@
+import 'package:dating_application_screens/dashboard/d_profile/presentation/profile_setting.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -139,19 +140,27 @@ class ProfilePage extends HookConsumerWidget {
             ),
             Padding(
               padding: EdgeInsets.only(left: 30.w, top: 20.h),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Image.asset('assets/images/profileimages/settings.png'),
-                  const Padding(padding: EdgeInsets.all(7)),
-                  const Text(
-                    'Setting',
-                    style: TextStyle(
-                      // fontSize: 22.sp,
-                      fontWeight: FontWeight.w600,
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => ProfileSetting()),
+                  );
+                },
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Image.asset('assets/images/profileimages/settings.png'),
+                    const Padding(padding: EdgeInsets.all(7)),
+                    const Text(
+                      'Setting',
+                      style: TextStyle(
+                        // fontSize: 22.sp,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
             Padding(
@@ -292,6 +301,5 @@ class ProfilePage extends HookConsumerWidget {
             )
           ],
         ));
-
   }
 }
