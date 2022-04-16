@@ -1,4 +1,5 @@
 import 'package:dating_application_screens/dashboard/a_discover/presentation/StoriesPreview.dart';
+import 'package:dating_application_screens/dashboard/a_discover/widget/bottomsheet.dart';
 import 'package:dating_application_screens/dashboard/a_discover/widget/swipecontainer1.dart';
 import 'package:dating_application_screens/dashboard/a_discover/widget/swipecontainer2.dart';
 import 'package:dating_application_screens/dashboard/a_discover/widget/swipecontainer3.dart';
@@ -99,8 +100,24 @@ class DiscoverPage extends HookConsumerWidget {
                         color: const Color(0xff59D6D6),
                         borderRadius: BorderRadius.circular(10.r),
                       ),
-                      child: Image.asset(
-                          'assets/images/discoverDashboardImages/dashboard_filter_image.png'),
+                      child: GestureDetector(
+                        onTap: () {
+                          showModalBottomSheet(
+                              context: context,
+                              isScrollControlled: true,
+                              backgroundColor: Colors.white,
+                              shape: const RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.vertical(
+                                top: Radius.circular(40),
+                              )),
+                              builder: (context) => const Padding(
+                                    padding: EdgeInsets.all(25.0),
+                                    child: BottomSheetScreen(),
+                                  ));
+                        },
+                        child: Image.asset(
+                            'assets/images/discoverDashboardImages/dashboard_filter_image.png'),
+                      ),
                     ),
                   ],
                 ),
