@@ -9,7 +9,7 @@ class NewTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-        itemCount: 5,
+        itemCount: 4,
         shrinkWrap: true,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
@@ -25,7 +25,11 @@ class NewTab extends StatelessWidget {
                 Container(
                   // height: 250.h,
                   decoration: BoxDecoration(
-                      color: Colors.red,
+                      color: Colors.grey[100],
+                      image: const DecorationImage(
+                          image:
+                              AssetImage('assets/images/matches/girlphoto.jpg'),
+                          fit: BoxFit.cover),
                       borderRadius: BorderRadius.circular(12)),
                 ),
                 Positioned(
@@ -64,6 +68,8 @@ class NewTab extends StatelessWidget {
                     left: 10,
                     child: Text(
                       'Angel priya , 26',
+                      style: TextStyle(
+                          color: Colors.white, fontWeight: FontWeight.bold),
                     )),
                 Positioned(
                     top: 153,
@@ -72,6 +78,7 @@ class NewTab extends StatelessWidget {
                       children: const [
                         Icon(
                           MdiIcons.school,
+                          color: Colors.white,
                           size: 10,
                         ),
                         SizedBox(
@@ -79,7 +86,7 @@ class NewTab extends StatelessWidget {
                         ),
                         Text(
                           'Lucknow University',
-                          style: TextStyle(fontSize: 8),
+                          style: TextStyle(fontSize: 8, color: Colors.white),
                         ),
                       ],
                     )),
@@ -90,6 +97,7 @@ class NewTab extends StatelessWidget {
                       children: const [
                         Icon(
                           MdiIcons.briefcase,
+                          color: Colors.white,
                           size: 10,
                         ),
                         SizedBox(
@@ -97,7 +105,7 @@ class NewTab extends StatelessWidget {
                         ),
                         Text(
                           'UI/Ux designer',
-                          style: TextStyle(fontSize: 8),
+                          style: TextStyle(fontSize: 8, color: Colors.white),
                         ),
                       ],
                     )),
@@ -108,6 +116,7 @@ class NewTab extends StatelessWidget {
                       children: const [
                         Icon(
                           MdiIcons.starCircle,
+                          color: Colors.white,
                           size: 10,
                         ),
                         SizedBox(
@@ -115,7 +124,7 @@ class NewTab extends StatelessWidget {
                         ),
                         Text(
                           'xyz ',
-                          style: TextStyle(fontSize: 8),
+                          style: TextStyle(fontSize: 8, color: Colors.white),
                         ),
                       ],
                     )),
@@ -124,7 +133,7 @@ class NewTab extends StatelessWidget {
                   left: 10,
                   child: Text(
                     'Live in Lucknow Uttar Pradesh ',
-                    style: TextStyle(fontSize: 8),
+                    style: TextStyle(fontSize: 8, color: Colors.white),
                   ),
                 ),
                 const Positioned(

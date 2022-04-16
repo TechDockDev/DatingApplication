@@ -17,7 +17,7 @@ import '../../../authentication/presentation/logIn/email_confirm.dart' as _i3;
 import '../../../authentication/presentation/logIn/log_in_page.dart' as _i2;
 import '../../../authentication/presentation/logIn/verify_page.dart' as _i4;
 import '../../../authentication/presentation/logIn/welcome_page.dart' as _i5;
-import '../../../authentication/presentation/signIn/sign_up_page.dart' as _i1;
+import '../../../authentication/presentation/signUp/sign_up_page.dart' as _i1;
 import '../../../dashboard/presentation/dashboard_page.dart' as _i6;
 
 class AppRouter extends _i7.RootStackRouter {
@@ -54,19 +54,19 @@ class AppRouter extends _i7.RootStackRouter {
 
   @override
   List<_i7.RouteConfig> get routes => [
-        _i7.RouteConfig(SignUpRoute.name, path: '/sign-up-page'),
+        _i7.RouteConfig(SignUpRoute.name, path: '/'),
         _i7.RouteConfig(LogInRoute.name, path: '/log-in-page'),
         _i7.RouteConfig(EmailConfirmRoute.name, path: '/email-confirm-page'),
         _i7.RouteConfig(VerifyCodeRoute.name, path: '/verify-code-page'),
         _i7.RouteConfig(WelcomeRoute.name, path: '/welcome-page'),
-        _i7.RouteConfig(DashBoardRoute.name, path: '/')
+        _i7.RouteConfig(DashBoardRoute.name, path: '/dash-board-page')
       ];
 }
 
 /// generated route for
 /// [_i1.SignUpPage]
 class SignUpRoute extends _i7.PageRouteInfo<void> {
-  const SignUpRoute() : super(SignUpRoute.name, path: '/sign-up-page');
+  const SignUpRoute() : super(SignUpRoute.name, path: '/');
 
   static const String name = 'SignUpRoute';
 }
@@ -108,7 +108,7 @@ class WelcomeRoute extends _i7.PageRouteInfo<void> {
 /// generated route for
 /// [_i6.DashBoardPage]
 class DashBoardRoute extends _i7.PageRouteInfo<void> {
-  const DashBoardRoute() : super(DashBoardRoute.name, path: '/');
+  const DashBoardRoute() : super(DashBoardRoute.name, path: '/dash-board-page');
 
   static const String name = 'DashBoardRoute';
 }
