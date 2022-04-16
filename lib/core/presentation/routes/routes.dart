@@ -11,6 +11,7 @@ import 'package:dating_application_screens/dashboard/presentation/dashboard_page
   routes: <AutoRoute>[
     AutoRoute(
       page: SignUpPage,
+      initial: true,
     ),
     AutoRoute(
       page: LogInPage,
@@ -26,7 +27,6 @@ import 'package:dating_application_screens/dashboard/presentation/dashboard_page
     ),
     AutoRoute(
       page: DashBoardPage,
-      initial: true,
     ),
   ],
 )

@@ -1,3 +1,4 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:dating_application_screens/dashboard/a_discover/widget/indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
@@ -72,6 +73,61 @@ class StoryPreview extends HookConsumerWidget {
                     ),
                   ),
                 ),
+                Container(
+                  // height: MediaQuery.of(context).size.height,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage(
+                        'https://i.pinimg.com/originals/f1/e7/6e/f1e76e5e30e000461e6775bf7ce28aad.jpg',
+                      ),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+                Container(
+                  // height: MediaQuery.of(context).size.height,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage(
+                        'https://i.pinimg.com/originals/f1/e7/6e/f1e76e5e30e000461e6775bf7ce28aad.jpg',
+                      ),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+                Container(
+                  // height: MediaQuery.of(context).size.height,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage(
+                        'https://www.whatsappimages.in/wp-content/uploads/2022/01/Girl-DP.jpg',
+                      ),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+                Container(
+                  // height: MediaQuery.of(context).size.height,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage(
+                        'https://i.pinimg.com/originals/f1/e7/6e/f1e76e5e30e000461e6775bf7ce28aad.jpg',
+                      ),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+                Container(
+                  // height: MediaQuery.of(context).size.height,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage(
+                        'https://www.whatsappimages.in/wp-content/uploads/2022/01/Girl-DP.jpg',
+                      ),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
               ],
             ),
             Positioned(
@@ -85,9 +141,14 @@ class StoryPreview extends HookConsumerWidget {
               top: 50,
               child: Row(
                 children: [
-                  const Icon(
-                    Icons.arrow_back,
-                    color: Colors.white,
+                  InkWell(
+                    onTap: () {
+                      AutoRouter.of(context).pop();
+                    },
+                    child: const Icon(
+                      Icons.arrow_back,
+                      color: Colors.white,
+                    ),
                   ),
                   SizedBox(
                     width: 10.w,

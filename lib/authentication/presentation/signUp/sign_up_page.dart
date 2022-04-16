@@ -64,8 +64,8 @@ class SignUpPage extends HookConsumerWidget {
               top: 180.h,
               left: 40.w,
               child: Container(
-                height: 290.h,
-                width: 220.w,
+                height: 390.h,
+                width: 280.w,
                 alignment: Alignment.topCenter,
                 child: Padding(
                   padding: EdgeInsets.symmetric(
