@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class SwipeContainer1 extends StatelessWidget {
@@ -32,28 +33,28 @@ class SwipeContainer1 extends StatelessWidget {
             left: 10,
             top: 20,
             child: Container(
-                height: 20,
-                width: 50,
+                height: 30.h,
+                width: 55.w,
                 decoration: BoxDecoration(
                     color: const Color(0xff59D6D6),
                     borderRadius: BorderRadius.circular(5)),
                 child: Row(
-                  children: const [
+                  children: [
                     SizedBox(
-                      width: 4,
+                      width: 4.w,
                     ),
                     Icon(
                       MdiIcons.mapMarker,
-                      size: 10,
+                      size: 12.sp,
                       color: Colors.white,
                     ),
                     SizedBox(
-                      width: 3,
+                      width: 4.w,
                     ),
                     Text(
                       '20 Km',
                       style: TextStyle(
-                          fontSize: 9,
+                          fontSize: 12.sp,
                           color: Colors.white,
                           fontWeight: FontWeight.bold),
                     )
@@ -62,32 +63,32 @@ class SwipeContainer1 extends StatelessWidget {
 
         //details
 
-        const Positioned(
-          top: 240,
-          left: 10,
+        Positioned(
+          top: 320.h,
+          left: 10.w,
           child: Text('Angel priya , 26',
               style: TextStyle(
-                  fontSize: 18,
+                  fontSize: 27.sp,
                   color: Colors.white,
                   fontWeight: FontWeight.w600)),
         ),
         Positioned(
-            top: 270,
-            left: 10,
+            top: 370.h,
+            left: 10.w,
             child: Row(
-              children: const [
+              children: [
                 Icon(
                   MdiIcons.school,
                   color: Colors.white,
-                  size: 20,
+                  size: 25.sp,
                 ),
                 SizedBox(
-                  width: 10,
+                  width: 10.w,
                 ),
                 Text(
                   'Lucknow University',
                   style: TextStyle(
-                    fontSize: 17,
+                    fontSize: 22.sp,
                     color: Colors.white,
                   ),
                 )
@@ -95,22 +96,22 @@ class SwipeContainer1 extends StatelessWidget {
             )),
 
         Positioned(
-            top: 300,
-            left: 10,
+            top: 400.h,
+            left: 10.w,
             child: Row(
-              children: const [
+              children: [
                 Icon(
                   MdiIcons.briefcase,
                   color: Colors.white,
-                  size: 20,
+                  size: 25.sp,
                 ),
                 SizedBox(
-                  width: 10,
+                  width: 10.w,
                 ),
                 Text(
                   'Fashion designer',
                   style: TextStyle(
-                    fontSize: 17,
+                    fontSize: 22.sp,
                     color: Colors.white,
                   ),
                 )
@@ -118,79 +119,79 @@ class SwipeContainer1 extends StatelessWidget {
             )),
 
         Positioned(
-          top: 340,
-          left: 30,
+          top: 440.h,
+          left: 40.w,
           child: Row(
             children: [
               Container(
-                  height: 30,
-                  width: 30,
+                  height: 40.h,
+                  width: 40.w,
                   decoration: BoxDecoration(
                       color: const Color(0xff59D6D6),
                       borderRadius: BorderRadius.circular(9)),
-                  child: const Icon(
+                  child: Icon(
                     MdiIcons.reload,
-                    size: 18,
+                    size: 25.sp,
                     color: Colors.white,
                   )),
-              const SizedBox(
-                width: 20,
+              SizedBox(
+                width: 20.w,
               ),
               Container(
-                  height: 35,
-                  width: 35,
+                  height: 50.h,
+                  width: 50.w,
                   decoration: BoxDecoration(
                       color: const Color(0xff59D6D6),
                       borderRadius: BorderRadius.circular(9)),
-                  child: const Icon(
+                  child: Icon(
                     Icons.clear,
-                    size: 25,
+                    size: 35.sp,
                     color: Colors.white,
                   )),
-              const SizedBox(
-                width: 20,
+              SizedBox(
+                width: 20.w,
               ),
               Container(
-                  height: 50,
-                  width: 50,
+                  height: 70.h,
+                  width: 60.w,
                   decoration: BoxDecoration(
                       color: const Color(0xff59D6D6),
                       borderRadius: BorderRadius.circular(12)),
-                  child: const Icon(
+                  child: Icon(
                     MdiIcons.rocketLaunch,
-                    color: Colors.white,
-                    size: 30,
+                    color: const Color.fromRGBO(255, 255, 255, 1),
+                    size: 40.sp,
                   )),
-              const SizedBox(
-                width: 20,
+              SizedBox(
+                width: 20.w,
               ),
               Container(
-                  height: 35,
-                  width: 35,
+                  height: 50.h,
+                  width: 50.w,
                   decoration: BoxDecoration(
                       color: const Color(0xff59D6D6),
                       borderRadius: BorderRadius.circular(9)),
-                  child: const Icon(
+                  child: Icon(
                     Icons.favorite,
-                    size: 25,
+                    size: 35.sp,
                     color: Colors.white,
                   )),
-              const SizedBox(
-                width: 20,
+              SizedBox(
+                width: 20.w,
               ),
               Container(
-                  height: 30,
-                  width: 30,
+                  height: 40.h,
+                  width: 40.w,
                   decoration: BoxDecoration(
                       color: const Color(0xff59D6D6),
                       borderRadius: BorderRadius.circular(9)),
-                  child: const Icon(
+                  child: Icon(
                     Icons.visibility,
-                    size: 18,
+                    size: 25.sp,
                     color: Colors.white,
                   )),
-              const SizedBox(
-                width: 20,
+              SizedBox(
+                width: 20.w,
               ),
             ],
           ),
