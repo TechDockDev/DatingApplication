@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         minTextAdapt: true,
         splitScreenMode: true,
         designSize: const Size(428, 967),
-        builder: () => MaterialApp.router(
+        builder: (context) => MaterialApp.router(
               routeInformationParser: _appRouter.defaultRouteParser(),
               routerDelegate: _appRouter.delegate(),
               builder: (context, child) {
