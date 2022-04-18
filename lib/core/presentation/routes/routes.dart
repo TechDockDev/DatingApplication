@@ -4,6 +4,7 @@ import 'package:dating_application_screens/authentication/presentation/logIn/log
 import 'package:dating_application_screens/authentication/presentation/logIn/verify_page.dart';
 import 'package:dating_application_screens/authentication/presentation/logIn/welcome_page.dart';
 import 'package:dating_application_screens/authentication/presentation/signUp/sign_up_page.dart';
+import 'package:dating_application_screens/dashboard/d_profile/presentation/profile_setting.dart';
 import 'package:dating_application_screens/dashboard/presentation/dashboard_page.dart';
 
 @MaterialAutoRouter(
@@ -27,6 +28,9 @@ import 'package:dating_application_screens/dashboard/presentation/dashboard_page
     ),
     AutoRoute(
       page: DashBoardPage,
+    ),
+    AutoRoute(
+      page: ProfileSettingPage,
     ),
   ],
 )

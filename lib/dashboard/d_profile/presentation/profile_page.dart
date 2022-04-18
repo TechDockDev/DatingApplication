@@ -1,4 +1,5 @@
-import 'package:dating_application_screens/dashboard/d_profile/presentation/profile_setting.dart';
+import 'package:auto_route/auto_route.dart';
+import 'package:dating_application_screens/core/presentation/routes/routes.gr.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -142,10 +143,7 @@ class ProfilePage extends HookConsumerWidget {
               padding: EdgeInsets.only(left: 30.w, top: 20.h),
               child: GestureDetector(
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => ProfileSetting()),
-                  );
+                  AutoRouter.of(context).push(const ProfileSettingRoute());
                 },
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,

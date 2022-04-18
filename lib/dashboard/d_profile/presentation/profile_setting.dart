@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class ProfileSetting extends HookWidget {
-  const ProfileSetting({Key? key}) : super(key: key);
+class ProfileSettingPage extends HookWidget {
+  const ProfileSettingPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -110,7 +110,6 @@ class ProfileSetting extends HookWidget {
                 height: 20.h,
               ),
               CustomSwitch(
-                
                 defaultValue: likedormessage,
                 btnText: 'Only get messages from members you liked or messaged',
                 callback: (a) {
