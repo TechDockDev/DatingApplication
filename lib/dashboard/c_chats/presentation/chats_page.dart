@@ -50,11 +50,11 @@ class ChatsPage extends HookConsumerWidget {
                     SizedBox(width: 120.w),
                     Image.asset('assets/images/profileimages/video.png'),
                     SizedBox(
-                      width: 22.w,
+                      width: 15.w,
                     ),
                     Image.asset('assets/images/profileimages/call.png'),
                     SizedBox(
-                      width: 22.w,
+                      width: 15.w,
                     ),
                     Image.asset('assets/images/profileimages/Layer.png'),
                     SizedBox(
@@ -140,7 +140,7 @@ class ChatsPage extends HookConsumerWidget {
                 children: [
                   Image.asset('assets/images/profileimages/hear.png'),
                   const Spacer(),
-                  // const TextField()
+                  //const TextField()
                 ],
               ),
             )
