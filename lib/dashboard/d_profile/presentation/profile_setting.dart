@@ -1,3 +1,4 @@
+import 'package:dating_application_screens/dashboard/d_profile/presentation/deactivate_account.dart';
 import 'package:dating_application_screens/widget/custom_switch.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
@@ -225,10 +226,36 @@ class ProfileSettingPage extends HookWidget {
                   backgroundColor: Color(0xFF59D6D6),
                 ),
               ),
-              const ListTile(
+              ListTile(
                 contentPadding: EdgeInsets.zero,
-                title: Text('Deactivate Account'),
-                trailing: Icon(Icons.keyboard_arrow_right),
+                title: const Text('Deactivate Account'),
+                trailing: const Icon(Icons.keyboard_arrow_right),
+                onTap: () {
+                  showDialog(
+                      context: context,
+                      builder: (BuildContext context) => AlertDialog(
+                            title: const Center(
+                              child: Text(
+                                'Are you sure want to deactivate your Account?',
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                            // content: const Text('..'),
+                            actions: [
+                              ElevatedButton(
+                                onPressed: () => Navigator.pop(context, 'No'),
+                                child: const Text('No'),
+                              ),
+                              ElevatedButton(
+                                  onPressed: () => Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              const Deactivateaccount())),
+                                  child: const Text('Yes')),
+                            ],
+                          ));
+                },
               )
             ])));
   }
